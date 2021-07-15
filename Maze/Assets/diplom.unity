@@ -517,8 +517,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -263.3}
-  m_SizeDelta: {x: 0, y: -526.41626}
+  m_AnchoredPosition: {x: 0, y: -350.1}
+  m_SizeDelta: {x: 0, y: -700.1095}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &335594988
 MonoBehaviour:
@@ -614,11 +614,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: a2395bb8a91944f21b621f2614d6db99, type: 3}
       propertyPath: wallPrefabs.Array.size
-      value: 20
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: a2395bb8a91944f21b621f2614d6db99, type: 3}
       propertyPath: roomSettings.Array.size
-      value: 20
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: a2395bb8a91944f21b621f2614d6db99, type: 3}
       propertyPath: wallPrefabs.Array.data[7]
@@ -1039,7 +1039,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1436421507}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0.0000019073}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1454956866}
@@ -1047,7 +1047,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -249, y: 252}
+  m_AnchoredPosition: {x: -312, y: 359}
   m_SizeDelta: {x: 400, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1436421509

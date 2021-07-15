@@ -10,6 +10,7 @@ public class Player : MonoBehaviour {
 
 	private MazeDirection currentDirection;
     public Text actions;
+    public Text not;
     public int totalactions = 0;
     public bool f = false;
     string rootURL = "https://speedrunlabyrinth.000webhostapp.com/";
@@ -34,7 +35,7 @@ public class Player : MonoBehaviour {
 
             actions = GameObject.Find("Actions").GetComponent<Text>();
             actions.GetComponent<Text>().color = Color.red;
-            
+            not = GameObject.Find("notation").GetComponent<Text>();
             f = true;
         }
         MazeCellEdge edge = currentCell.GetEdge(direction);
@@ -52,7 +53,7 @@ public class Player : MonoBehaviour {
 
             actions = GameObject.Find("Actions").GetComponent<Text>();
             actions.GetComponent<Text>().color = Color.red;
-           
+            not = GameObject.Find("notation").GetComponent<Text>();
             f = true;
         }
         totalactions += 1;
@@ -109,12 +110,15 @@ public class Player : MonoBehaviour {
         //print(otherObj.gameObject.name);
         if (otherObj.gameObject.tag == "cube")
         {
-            Destroy(gameObject, .5f);
+            Destroy(gameObject, 10);
             //Debug.Log(PlayerPrefs.GetString("userEmail"));
             Debug.Log("SubmitScoreemail" + PlayerPrefs.GetString("userEmail"));
             Debug.Log("SubmitScoretotalactions" + totalactions);
             StartCoroutine(SubmitScore());
-            SceneManager.LoadScene(1);
+            Debug.Log("gameObject" + gameObject);
+            not.GetComponent<Text>().text = "Game Over! If you want to exit to the main menu press esc";
+
+
 
         }
     }

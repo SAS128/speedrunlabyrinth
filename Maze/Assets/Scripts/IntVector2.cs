@@ -1,5 +1,6 @@
 ﻿[System.Serializable]
 public struct IntVector2 {
+	// Step 3
 
 	public int x, z;
 
